@@ -24,7 +24,7 @@ from datetime import datetime
 
 
 def create_genesis_block():
-    return Block(0, datetime.now(), "this is the block ", "0")
+    return Block(0, datetime.now(), "Genesis Block", "0")
 
 
 M4BlockChain.append(create_genesis_block())
@@ -38,7 +38,8 @@ def next_block(last_block):
 
 # append 5 blocks to the blockchain
 def app_five(block_list):
-    current_block = create_genesis_block()
+    first_block = create_genesis_block()
+    current_block = next_block(first_block)
     block_list.append(current_block)
     i = 1
     while i != 5:
