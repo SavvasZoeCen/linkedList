@@ -24,7 +24,7 @@ from datetime import datetime
 
 
 def create_genesis_block():
-    return Block(0, datetime.now(), "Genesis Block", "0")
+    return Block(0, datetime.now(), "this is the block ", "0")
 
 
 M4BlockChain.append(create_genesis_block())
