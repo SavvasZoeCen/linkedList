@@ -42,9 +42,9 @@ def app_five(block_list):
     block_list.append(current_block)
     i = 1
     while i != 5:
-        next_block = next_block(current_block)
-        block_list.append(next_block)
-        current_block = next_block
+        the_next_block = next_block(current_block)
+        block_list.append(the_next_block)
+        current_block = the_next_block
         i += 1
     return block_list
 
